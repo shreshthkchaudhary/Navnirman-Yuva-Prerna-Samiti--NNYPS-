@@ -70,18 +70,16 @@ All unverified information is marked with `[TO BE CONFIRMED BY NGO]` or `[एन
 
 ## 4. How to Configure the Formspree Contact Form
 
-1. Sign up for free at [Formspree](https://formspree.io/).
-2. Create a new form and copy your Form ID (e.g., `mwpkkdzy`).
-3. Open `contact.html`.
-4. Locate line 223:
-   ```html
-   <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-5">
-   ```
-5. Replace `YOUR_FORM_ID` with your actual form ID:
-   ```html
-   <form id="contact-form" action="https://formspree.io/f/mwpkkdzy" method="POST" class="space-y-5">
-   ```
-6. Test submitting a message; you will receive form responses directly in your Formspree dashboard and linked email.
+The contact form is currently configured with the endpoint:
+```html
+<form id="contact-form" action="https://formspree.io/f/moedvlkr" method="POST" class="space-y-5">
+```
+
+If you ever need to change the Formspree form ID:
+1. Sign up or log in at [Formspree](https://formspree.io/).
+2. Create a new form and copy your Form ID.
+3. Open `contact.html` and update the `action` attribute on `<form id="contact-form">`.
+4. Test submitting a message; you will receive form responses directly in your Formspree dashboard and linked email.
 
 ---
 
