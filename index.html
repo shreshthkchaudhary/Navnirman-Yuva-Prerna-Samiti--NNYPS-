@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>नव निर्माण युवा प्रेरणा समिति (NNYPS) | Nav Nirman Yuva Prerna Samiti</title>
+  <meta name="description" content="नव निर्माण युवा प्रेरणा समिति (NNYPS) - ग्राम नगला बरी, मैनपुरी, उत्तर प्रदेश में स्थित एक युवा-नेतृत्व वाला ग्रामीण सामुदायिक संगठन।">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="नव निर्माण युवा प्रेरणा समिति (NNYPS) | Mainpuri, UP">
+  <meta property="og:description" content="A youth-led rural community organisation in Village Nagla Bari, Post Manauna, District Mainpuri, Uttar Pradesh.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/general/general-01.jpg">
+  
+  <!-- Google Fonts: Noto Sans Devanagari & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+              800: '#9a3412',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-stone-50 text-stone-800 flex flex-col min-h-screen">
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm transition-all">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand / Logo Link -->
+        <a href="index.html" class="flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-brand-600 rounded-lg p-1" aria-label="NNYPS Home">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-600 to-amber-500 text-white flex items-center justify-center font-bold text-lg shadow-md flex-shrink-0">
+            <span>NNYPS</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-bold text-stone-900 text-base sm:text-lg leading-tight" 
+                  data-hi="नव निर्माण युवा प्रेरणा समिति" 
+                  data-en="Nav Nirman Yuva Prerna Samiti">
+              नव निर्माण युवा प्रेरणा समिति
+            </span>
+            <span class="text-xs text-stone-600" 
+                  data-hi="नगला बरी, मनौना, मैनपुरी (उ.प्र.)" 
+                  data-en="Nagla Bari, Manauna, Mainpuri (U.P.)">
+              नगला बरी, मनौना, मैनपुरी (उ.प्र.)
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-1 lg:space-x-2" aria-label="मुख्य नेविगेशन">
+          <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-brand-700 bg-brand-50 transition" 
+             data-hi="मुख्य पृष्ठ" 
+             data-en="Home">
+            मुख्य पृष्ठ
+          </a>
+          <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-medium text-stone-700 hover:text-brand-600 hover:bg-stone-100 transition" 
+             data-hi="हमारे बारे में" 
+             data-en="About Us">
+            हमारे बारे में
+          </a>
+          <a href="programs.html" class="px-3 py-2 rounded-lg text-sm font-medium text-stone-700 hover:text-brand-600 hover:bg-stone-100 transition" 
+             data-hi="कार्यक्रम" 
+             data-en="Programs">
+            कार्यक्रम
+          </a>
+          <a href="gallery.html" class="px-3 py-2 rounded-lg text-sm font-medium text-stone-700 hover:text-brand-600 hover:bg-stone-100 transition" 
+             data-hi="फोटो गैलरी" 
+             data-en="Gallery">
+            फोटो गैलरी
+          </a>
+          <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-medium text-stone-700 hover:text-brand-600 hover:bg-stone-100 transition" 
+             data-hi="संपर्क" 
+             data-en="Contact">
+            संपर्क
+          </a>
+        </nav>
+
+        <!-- Right Side: Language Switcher & Mobile Menu Button -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          
+          <!-- Bilingual Switcher Pill -->
+          <div class="inline-flex items-center p-1 bg-stone-100 border border-stone-200 rounded-full" role="group" aria-label="Language selection">
+            <button type="button" class="lang-btn-hi px-3 py-1 text-xs font-bold rounded-full transition focus:outline-none" aria-pressed="true">
+              हिंदी
+            </button>
+            <button type="button" class="lang-btn-en px-3 py-1 text-xs font-bold rounded-full transition focus:outline-none" aria-pressed="false">
+              EN
+            </button>
+          </div>
+
+          <!-- Mobile Hamburger Toggle Button -->
+          <button id="mobile-menu-toggle" type="button" 
+                  class="md:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100 focus:outline-none focus:ring-2 focus:ring-brand-600 min-h-[44px] min-w-[44px] flex items-center justify-center" 
+                  aria-controls="mobile-menu" 
+                  aria-expanded="false" 
+                  aria-label="मेनू खोलें या बंद करें">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu (Hidden by Default) -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-stone-200 bg-white px-4 pt-3 pb-6 shadow-lg transition-all">
+      <nav class="flex flex-col space-y-2">
+        <a href="index.html" class="px-4 py-3 rounded-lg text-base font-semibold text-brand-700 bg-brand-50" 
+           data-hi="मुख्य पृष्ठ" 
+           data-en="Home">
+          मुख्य पृष्ठ
+        </a>
+        <a href="about.html" class="px-4 py-3 rounded-lg text-base font-medium text-stone-700 hover:bg-stone-50" 
+           data-hi="हमारे बारे में" 
+           data-en="About Us">
+          हमारे बारे में
+        </a>
+        <a href="programs.html" class="px-4 py-3 rounded-lg text-base font-medium text-stone-700 hover:bg-stone-50" 
+           data-hi="कार्यक्रम" 
+           data-en="Programs">
+          कार्यक्रम
+        </a>
+        <a href="gallery.html" class="px-4 py-3 rounded-lg text-base font-medium text-stone-700 hover:bg-stone-50" 
+           data-hi="फोटो गैलरी" 
+           data-en="Gallery">
+          फोटो गैलरी
+        </a>
+        <a href="contact.html" class="px-4 py-3 rounded-lg text-base font-medium text-stone-700 hover:bg-stone-50" 
+           data-hi="संपर्क" 
+           data-en="Contact">
+          संपर्क
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="flex-grow">
+    
+    <!-- Hero Section -->
+    <section class="py-10 sm:py-16 bg-gradient-to-b from-brand-50/70 via-stone-50 to-stone-50 border-b border-stone-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          
+          <!-- Hero Text -->
+          <div class="md:col-span-7 flex flex-col items-start space-y-4">
+            
+            <!-- Village Badge -->
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-100 text-brand-800 border border-orange-200 text-xs sm:text-sm font-medium">
+              <svg class="w-4 h-4 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+              </svg>
+              <span data-hi="ग्राम नगला बरी, पोस्ट मनौना, जिला मैनपुरी (उत्तर प्रदेश)" 
+                    data-en="Village Nagla Bari, Post Manauna, District Mainpuri (Uttar Pradesh)">
+                ग्राम नगला बरी, पोस्ट मनौना, जिला मैनपुरी (उत्तर प्रदेश)
+              </span>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 leading-tight">
+              <span data-hi="नव निर्माण युवा प्रेरणा समिति" data-en="Nav Nirman Yuva Prerna Samiti">
+                नव निर्माण युवा प्रेरणा समिति
+              </span>
+              <span class="block text-xl sm:text-2xl font-semibold text-brand-600 mt-1" 
+                    data-hi="(NNYPS)" 
+                    data-en="(NNYPS)">
+                (NNYPS)
+              </span>
+            </h1>
+
+            <!-- One-line mission placeholder -->
+            <p class="text-base sm:text-lg text-stone-700 leading-relaxed font-normal">
+              <span data-hi="नगला बरी, मैनपुरी में युवा-नेतृत्व वाला एक ग्रामीण सामुदायिक संगठन" 
+                    data-en="A youth-led rural community organisation in Nagla Bari, Mainpuri">
+                नगला बरी, मैनपुरी में युवा-नेतृत्व वाला एक ग्रामीण सामुदायिक संगठन
+              </span>
+              <span class="badge-placeholder ml-1" 
+                    data-hi="[एनजीओ द्वारा पुष्टि की जानी है]" 
+                    data-en="[TO BE CONFIRMED BY NGO]">
+                [TO BE CONFIRMED BY NGO]
+              </span>
+            </p>
+
+            <p class="text-sm text-stone-600 leading-relaxed">
+              <span data-hi="गाँव के युवाओं और समुदाय की सहभागिता से समाज सेवा व सांस्कृतिक कार्यक्रमों का आयोजन।" 
+                    data-en="Organising community service and cultural events through the participation of village youth and community.">
+                गाँव के युवाओं और समुदाय की सहभागिता से समाज सेवा व सांस्कृतिक कार्यक्रमों का आयोजन।
+              </span>
+            </p>
+
+            <!-- Call to Action Buttons -->
+            <div class="flex flex-wrap gap-3 pt-2 w-full sm:w-auto">
+              <a href="programs.html" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm sm:text-base shadow-sm transition min-h-[48px] w-full sm:w-auto text-center"
+                 data-hi="कार्यक्रम देखें" 
+                 data-en="View Programs">
+                कार्यक्रम देखें
+              </a>
+              <a href="contact.html" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white hover:bg-stone-100 text-stone-800 border border-stone-300 font-semibold text-sm sm:text-base shadow-sm transition min-h-[48px] w-full sm:w-auto text-center"
+                 data-hi="संपर्क करें" 
+                 data-en="Contact Us">
+                संपर्क करें
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Hero Image Card (Compact, aspect-controlled card, not full-screen banner) -->
+          <div class="md:col-span-5 w-full">
+            <div class="bg-white p-3 sm:p-4 rounded-2xl shadow-sm border border-stone-200">
+              <div class="photo-frame aspect-[4/3] rounded-xl overflow-hidden bg-stone-100 border border-stone-200">
+                <img src="assets/images/general/general-01.jpg" 
+                     alt="नव निर्माण युवा प्रेरणा समिति (NNYPS)" 
+                     data-hi-alt="नव निर्माण युवा प्रेरणा समिति (NNYPS) का एक दृश्य" 
+                     data-en-alt="A view from Nav Nirman Yuva Prerna Samiti (NNYPS)" 
+                     loading="eager" 
+                     width="640" 
+                     height="480"
+                     class="w-full h-full object-cover">
+              </div>
+              <div class="mt-3 text-center">
+                <p class="text-xs text-stone-500 font-medium" 
+                   data-hi="नव निर्माण युवा प्रेरणा समिति - नगला बरी, मैनपुरी" 
+                   data-en="Nav Nirman Yuva Prerna Samiti - Nagla Bari, Mainpuri">
+                  नव निर्माण युवा प्रेरणा समिति - नगला बरी, मैनपुरी
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Short Intro Snapshot Section -->
+    <section class="py-12 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl mx-auto text-center space-y-4">
+          <h2 class="text-2xl sm:text-3xl font-bold text-stone-900" 
+              data-hi="परिचय: नव निर्माण युवा प्रेरणा समिति" 
+              data-en="About NNYPS">
+            परिचय: नव निर्माण युवा प्रेरणा समिति
+          </h2>
+          <p class="text-stone-700 leading-relaxed text-sm sm:text-base">
+            <span data-hi="नव निर्माण युवा प्रेरणा समिति (NNYPS) उत्तर प्रदेश के मैनपुरी जिले के अंतर्गत ग्राम नगला बरी (डाकघर मनौना) में स्थित एक युवा-संचालित ग्रामीण संगठन है। समिति स्थानीय स्तर पर समाज निर्माण, शिक्षकों के सम्मान और साहित्यिक-सांस्कृतिक कार्यक्रमों के आयोजन के माध्यम से युवाओं को प्रेरित करने के लिए कार्य करती है।" 
+                  data-en="Nav Nirman Yuva Prerna Samiti (NNYPS) is a youth-led community organisation based in Village Nagla Bari (Post Manauna), District Mainpuri, Uttar Pradesh. The samiti works to inspire rural youth through community service, felicitation of teachers, and cultural-literary gatherings.">
+              नव निर्माण युवा प्रेरणा समिति (NNYPS) उत्तर प्रदेश के मैनपुरी जिले के अंतर्गत ग्राम नगला बरी (डाकघर मनौना) में स्थित एक युवा-संचालित ग्रामीण संगठन है। समिति स्थानीय स्तर पर समाज निर्माण, शिक्षकों के सम्मान और साहित्यिक-सांस्कृतिक कार्यक्रमों के आयोजन के माध्यम से युवाओं को प्रेरित करने के लिए कार्य करती है।
+            </span>
+          </p>
+          <div class="pt-2">
+            <a href="about.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 hover:text-brand-700 underline underline-offset-4"
+               data-hi="समिति के बारे में और अधिक जानें &rarr;" 
+               data-en="Learn more about the organisation &rarr;">
+              समिति के बारे में और अधिक जानें &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Highlights Section -->
+    <section class="py-12 bg-stone-50 border-t border-stone-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 pb-3 border-b border-stone-200">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-600" 
+                  data-hi="हमारे प्रमुख आयोजन" 
+                  data-en="Major Events">
+              हमारे प्रमुख आयोजन
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-stone-900 mt-1" 
+                data-hi="आयोजित कार्यक्रम एवं गतिविधियाँ" 
+                data-en="Organised Programs & Activities">
+              आयोजित कार्यक्रम एवं गतिविधियाँ
+            </h2>
+          </div>
+          <a href="programs.html" class="mt-3 sm:mt-0 text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1"
+             data-hi="सभी कार्यक्रम देखें &rarr;" 
+             data-en="View all programs &rarr;">
+            सभी कार्यक्रम देखें &rarr;
+          </a>
+        </div>
+
+        <!-- 3 Known Events Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- Card 1: Teachers' Day 2013 -->
+          <article class="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-md transition flex flex-col">
+            <div class="photo-frame aspect-[4/3] bg-stone-100">
+              <img src="assets/images/teachers-day-2013/teachers-day-2013-01.jpg" 
+                   alt="सेवानिवृत्त शिक्षक सम्मान समारोह" 
+                   data-hi-alt="सेवानिवृत्त शिक्षक सम्मान समारोह - 5 सितंबर 2013" 
+                   data-en-alt="Felicitation of retired teachers - 5 September 2013" 
+                   loading="lazy" 
+                   width="400" 
+                   height="300"
+                   class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <div class="flex items-center gap-2 text-xs font-semibold text-brand-600 mb-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+                <span data-hi="5 सितंबर 2013 (शिक्षक दिवस)" data-en="5 September 2013 (Teachers' Day)">5 सितंबर 2013 (शिक्षक दिवस)</span>
+              </div>
+              <h3 class="text-lg font-bold text-stone-900 leading-snug mb-2" 
+                  data-hi="सेवानिवृत्त शिक्षक सम्मान समारोह" 
+                  data-en="Seva Nivritt Shikshak Samman Samaroh">
+                सेवानिवृत्त शिक्षक सम्मान समारोह
+              </h3>
+              <p class="text-sm text-stone-600 leading-relaxed mb-4 flex-grow" 
+                 data-hi="शिक्षक दिवस के अवसर पर क्षेत्र के सम्मानित सेवानिवृत्त शिक्षकों का सम्मान एवं अभिवादन समारोह।" 
+                 data-en="Felicitation ceremony honouring retired teachers of the area on the occasion of Teachers' Day.">
+                शिक्षक दिवस के अवसर पर क्षेत्र के सम्मानित सेवानिवृत्त शिक्षकों का सम्मान एवं अभिवादन समारोह।
+              </p>
+              <div class="pt-3 border-t border-stone-100">
+                <a href="gallery.html#teachers-day-2013" class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1.5"
+                   data-hi="फोटो देखें (56 फोटो) &rarr;" 
+                   data-en="View Photos (56 photos) &rarr;">
+                  फोटो देखें (56 फोटो) &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Gandhi & Shastri Jayanti 2013 -->
+          <article class="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-md transition flex flex-col">
+            <div class="photo-frame aspect-[4/3] bg-stone-100">
+              <img src="assets/images/gandhi-shastri-jayanti-2013/gandhi-shastri-jayanti-2013-01.jpg" 
+                   alt="गांधी एवं शास्त्री जयंती समारोह और कवि सम्मेलन" 
+                   data-hi-alt="गांधी एवं शास्त्री जयंती समारोह और कवि सम्मेलन - 2 अक्टूबर 2013" 
+                   data-en-alt="Gandhi & Shastri Jayanti Programme and Poetry Gathering - 2 October 2013" 
+                   loading="lazy" 
+                   width="400" 
+                   height="300"
+                   class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <div class="flex items-center gap-2 text-xs font-semibold text-brand-600 mb-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+                <span data-hi="2 अक्टूबर 2013" data-en="2 October 2013">2 अक्टूबर 2013</span>
+              </div>
+              <h3 class="text-lg font-bold text-stone-900 leading-snug mb-2" 
+                  data-hi="गांधी व शास्त्री जयंती एवं कवि सम्मेलन" 
+                  data-en="Gandhi & Shastri Jayanti and Kavi Sammelan">
+                गांधी व शास्त्री जयंती एवं कवि सम्मेलन
+              </h3>
+              <p class="text-sm text-stone-600 leading-relaxed mb-4 flex-grow" 
+                 data-hi="महात्मा गांधी व लाल बहादुर शास्त्री जयंती के पावन अवसर पर विचार गोष्ठी और कवि सम्मेलन का आयोजन।" 
+                 data-en="Commemorative programme and poetry gathering on the occasion of Gandhi and Shastri Jayanti.">
+                महात्मा गांधी व लाल बहादुर शास्त्री जयंती के पावन अवसर पर विचार गोष्ठी और कवि सम्मेलन का आयोजन।
+              </p>
+              <div class="pt-3 border-t border-stone-100">
+                <a href="gallery.html#gandhi-shastri-jayanti-2013" class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1.5"
+                   data-hi="फोटो देखें (65 फोटो) &rarr;" 
+                   data-en="View Photos (65 photos) &rarr;">
+                  फोटो देखें (65 फोटो) &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Monthly Program -->
+          <article class="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-md transition flex flex-col">
+            <div class="photo-frame aspect-[4/3] bg-stone-100">
+              <img src="assets/images/monthly-program/monthly-program-01.jpg" 
+                   alt="समिति का मासिक कार्यक्रम" 
+                   data-hi-alt="नव निर्माण युवा प्रेरणा समिति का मासिक कार्यक्रम" 
+                   data-en-alt="NNYPS Monthly Community Program" 
+                   loading="lazy" 
+                   width="400" 
+                   height="300"
+                   class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <div class="flex items-center gap-2 text-xs font-semibold text-brand-600 mb-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+                <span data-hi="मासिक कार्यक्रम" data-en="Monthly Program">मासिक कार्यक्रम</span>
+              </div>
+              <h3 class="text-lg font-bold text-stone-900 leading-snug mb-2" 
+                  data-hi="मासिक सामुदायिक कार्यक्रम" 
+                  data-en="Monthly Community Program">
+                मासिक सामुदायिक कार्यक्रम
+              </h3>
+              <p class="text-sm text-stone-600 leading-relaxed mb-4 flex-grow">
+                <span data-hi="NNYPS के मासिक सामुदायिक कार्यक्रमों की झलकियां।" 
+                      data-en="Photos from NNYPS's monthly community programs.">
+                  NNYPS के मासिक सामुदायिक कार्यक्रमों की झलकियां।
+                </span>
+                <span class="badge-placeholder ml-1" 
+                      data-hi="[एनजीओ द्वारा पुष्टि की जानी है]" 
+                      data-en="[TO BE CONFIRMED BY NGO]">
+                  [TO BE CONFIRMED BY NGO]
+                </span>
+              </p>
+              <div class="pt-3 border-t border-stone-100">
+                <a href="gallery.html#monthly-program" class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1.5"
+                   data-hi="फोटो देखें (48 फोटो) &rarr;" 
+                   data-en="View Photos (48 photos) &rarr;">
+                  फोटो देखें (48 फोटो) &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Location & Contact CTA Banner -->
+    <section class="py-12 bg-white border-t border-stone-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-6 sm:p-8 border border-orange-200 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="space-y-2 text-center md:text-left">
+            <h3 class="text-xl sm:text-2xl font-bold text-stone-900" 
+                data-hi="समिति से जुड़ें या जानकारी साझा करें" 
+                data-en="Connect with NNYPS or Share Details">
+              समिति से जुड़ें या जानकारी साझा करें
+            </h3>
+            <p class="text-sm sm:text-base text-stone-600 max-w-xl" 
+               data-hi="ग्राम नगला बरी, पोस्ट मनौना, जिला मैनपुरी, उत्तर प्रदेश। हम ग्रामीण युवाओं की सहभागिता का स्वागत करते हैं।" 
+               data-en="Village Nagla Bari, Post Manauna, District Mainpuri, Uttar Pradesh. We welcome community and youth participation.">
+              ग्राम नगला बरी, पोस्ट मनौना, जिला मैनपुरी, उत्तर प्रदेश। हम ग्रामीण युवाओं की सहभागिता का स्वागत करते हैं।
+            </p>
+          </div>
+          <div class="flex-shrink-0">
+            <a href="contact.html" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm sm:text-base shadow-sm transition min-h-[48px]"
+               data-hi="संपर्क फॉर्म भरें" 
+               data-en="Fill Contact Form">
+              संपर्क फॉर्म भरें
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== SHARED FOOTER ==================== -->
+  <footer class="bg-stone-900 text-stone-300 border-t border-stone-800 pt-12 pb-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <!-- Top Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-stone-800">
+        
+        <!-- NGO Info Column -->
+        <div class="md:col-span-5 space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-brand-600 text-white flex items-center justify-center font-bold text-xs">
+              NNYPS
+            </div>
+            <span class="font-bold text-white text-base" 
+                  data-hi="नव निर्माण युवा प्रेरणा समिति" 
+                  data-en="Nav Nirman Yuva Prerna Samiti">
+              नव निर्माण युवा प्रेरणा समिति
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-stone-400 leading-relaxed" 
+             data-hi="ग्राम नगला बरी, पोस्ट मनौना, जिला मैनपुरी, उत्तर प्रदेश में स्थित एक युवा-नेतृत्व वाला ग्रामीण सामुदायिक संगठन।" 
+             data-en="A youth-led rural community organisation in Village Nagla Bari, Post Manauna, District Mainpuri, Uttar Pradesh.">
+            ग्राम नगला बरी, पोस्ट मनौना, जिला मैनपुरी, उत्तर प्रदेश में स्थित एक युवा-नेतृत्व वाला ग्रामीण सामुदायिक संगठन।
+          </p>
+          <div class="text-xs text-stone-400 space-y-1 pt-1">
+            <p>
+              <strong class="text-stone-300" data-hi="स्थान: " data-en="Location: ">स्थान: </strong>
+              <span data-hi="ग्राम नगला बरी, पोस्ट मनौना, जिला मैनपुरी (उ.प्र.)" data-en="Village Nagla Bari, Post Manauna, District Mainpuri (U.P.)">
+                ग्राम नगला बरी, पोस्ट मनौना, जिला मैनपुरी (उ.प्र.)
+              </span>
+            </p>
+            <p>
+              <strong class="text-stone-300" data-hi="संपर्क नंबर: " data-en="Phone: ">संपर्क नंबर: </strong>
+              <span class="badge-placeholder" data-hi="[एनजीओ द्वारा पुष्टि की जानी है]" data-en="[TO BE CONFIRMED BY NGO]">[TO BE CONFIRMED BY NGO]</span>
+            </p>
+            <p>
+              <strong class="text-stone-300" data-hi="ईमेल: " data-en="Email: ">ईमेल: </strong>
+              <span class="badge-placeholder" data-hi="[एनजीओ द्वारा पुष्टि की जानी है]" data-en="[TO BE CONFIRMED BY NGO]">[TO BE CONFIRMED BY NGO]</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider" 
+              data-hi="पृष्ठ सूची" 
+              data-en="Quick Links">
+            पृष्ठ सूची
+          </h4>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li>
+              <a href="index.html" class="hover:text-brand-500 transition text-stone-400" 
+                 data-hi="मुख्य पृष्ठ (Home)" 
+                 data-en="Home">
+                मुख्य पृष्ठ (Home)
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-brand-500 transition text-stone-400" 
+                 data-hi="हमारे बारे में (About Us)" 
+                 data-en="About Us">
+                हमारे बारे में (About Us)
+              </a>
+            </li>
+            <li>
+              <a href="programs.html" class="hover:text-brand-500 transition text-stone-400" 
+                 data-hi="कार्यक्रम (Programs)" 
+                 data-en="Programs">
+                कार्यक्रम (Programs)
+              </a>
+            </li>
+            <li>
+              <a href="gallery.html" class="hover:text-brand-500 transition text-stone-400" 
+                 data-hi="फोटो गैलरी (Gallery)" 
+                 data-en="Photo Gallery">
+                फोटो गैलरी (Gallery)
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-brand-500 transition text-stone-400" 
+                 data-hi="संपर्क (Contact)" 
+                 data-en="Contact">
+                संपर्क (Contact)
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- College Project Credits -->
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider" 
+              data-hi="परियोजना विवरण" 
+              data-en="Project Attribution">
+            परियोजना विवरण
+          </h4>
+          <div class="p-4 rounded-xl bg-stone-800/80 border border-stone-700 space-y-2">
+            <span class="inline-block px-2 py-0.5 rounded text-[11px] font-bold bg-amber-900/60 text-amber-200 border border-amber-700/50">
+              Course Code: CS002
+            </span>
+            <p class="text-xs text-stone-300 leading-relaxed" 
+               data-hi="यह वेबसाइट कॉलेज कम्युनिटी-सर्विस प्रोजेक्ट (CS002) के अंतर्गत एक छोटे ग्रामीण गैर-सरकारी संगठन (NGO) के सहयोग हेतु निर्मित की गई है।" 
+               data-en="This website was developed as part of a college community-service project (CS002) to support a local rural NGO.">
+              यह वेबसाइट कॉलेज कम्युनिटी-सर्विस प्रोजेक्ट (CS002) के अंतर्गत एक छोटे ग्रामीण गैर-सरकारी संगठन (NGO) के सहयोग हेतु निर्मित की गई है।
+            </p>
+            <p class="text-[11px] text-stone-400" 
+               data-hi="छात्र दल: [कॉलेज छात्र दल] | मार्गदर्शन: CS002 पाठ्यक्रम" 
+               data-en="Student Team: [College Student Team] | Course: CS002">
+              छात्र दल: [कॉलेज छात्र दल] | मार्गदर्शन: CS002 पाठ्यक्रम
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 gap-3">
+        <p>
+          &copy; <span id="current-year">2026</span> 
+          <span data-hi="नव निर्माण युवा प्रेरणा समिति (NNYPS)। सर्वाधिकार सुरक्षित।" 
+                data-en="Nav Nirman Yuva Prerna Samiti (NNYPS). All rights reserved.">
+            नव निर्माण युवा प्रेरणा समिति (NNYPS)। सर्वाधिकार सुरक्षित।
+          </span>
+        </p>
+        <p class="text-stone-400">
+          <span data-hi="फोटो उपयोग: एनजीओ प्रमुख की अनुमति से" 
+                data-en="Photos used with permission from the NGO leadership">
+            फोटो उपयोग: एनजीओ प्रमुख की अनुमति से
+          </span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
