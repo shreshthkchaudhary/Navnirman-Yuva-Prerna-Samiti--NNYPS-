@@ -1,6 +1,8 @@
 # Nav Nirman Yuva Prerna Samiti (NNYPS) - Website
 **नव निर्माण युवा प्रेरणा समिति (NNYPS)**
 
+The site is deployed on Vercel at https://navnirmanyuvaprernasamiti-nnyps.vercel.app/ (GitHub Pages also works).
+
 Lightweight, mobile-first, bilingual (Hindi + English) static website developed as part of a college community-service project (**Course Code: CS002**).
 
 ---
@@ -35,6 +37,7 @@ Navnirman-Yuva-Prerna-Samiti--NNYPS-/
     │   ├── gallery-data.js      # Central photo albums configuration
     │   └── gallery.js           # Filtering, pagination, & keyboard-friendly lightbox
     └── images/
+        ├── logo/                        (4 files: logo-icon.png, logo-full.png, favicon-32.png, apple-touch-icon.png)
         ├── gandhi-shastri-jayanti-2013/ (65 photos: ...-01.jpg to ...-65.jpg)
         ├── teachers-day-2013/           (56 photos: ...-01.jpg to ...-56.jpg)
         ├── monthly-program/             (48 photos: ...-01.jpg to ...-48.jpg)
@@ -166,12 +169,7 @@ All photos reside in `assets/images/`:
 - **Course:** Community Sdg (CS002) | B.Tech CSE - D (2nd Year, 2026–2027 ODD)
 - **Team ID & Name:** `26O2122` - Tech Seva
 - **Internal Faculty Mentor:** Dr. Naman Gupta
-- **Student Team:**
-  1. **Shreshth Kumar Chaudhary** (Team Leader) – Roll No: `2501010080` (Email: `2501010080@krmu.edu.in`)
-  2. **Nitin** – Roll No: `2501010014` (Email: `2501010014@krmu.edu.in`)
-  3. **Ryan Singh Gosain** – Roll No: `2501010259` (Email: `2501010259@krmu.edu.in`)
-  4. **Shreyansh Kumar** – Roll No: `2501010019` (Email: `2501010019@krmu.edu.in`)
-  5. **Rishabh Kumar Singh** – Roll No: `2501010263` (Email: `2501010263@krmu.edu.in`)
+- **Student Team:** Shreshth Kumar Chaudhary (Team Leader) & Team Tech Seva (Nitin, Ryan Singh Gosain, Shreyansh Kumar, Rishabh Kumar Singh) | B.Tech CSE, K.R. Mangalam University
 - **Partner Organisation:** Nav Nirman Yuva Prerna Samiti (NNYPS)
 - **Location:** Village Nagla Bari, Post Manauna, District Mainpuri, Uttar Pradesh
 - **Photo Permissions:** Photos used with explicit permission from the NGO leadership for public educational and community engagement purposes.
