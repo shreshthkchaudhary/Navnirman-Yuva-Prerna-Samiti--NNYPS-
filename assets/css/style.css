@@ -1,0 +1,77 @@
+/* NNYPS Stylesheet - College Community-Service Project (CS002) */
+
+:root {
+  --primary-saffron: #ea580c; /* Tailwind orange-600 */
+  --primary-dark: #c2410c;    /* Tailwind orange-700 */
+  --accent-amber: #f59e0b;    /* Tailwind amber-500 */
+  --bg-cream: #fffbf5;
+}
+
+body {
+  font-family: 'Noto Sans Devanagari', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure comfortable line heights for Devanagari script */
+[lang="hi"] body,
+html[lang="hi"] {
+  line-height: 1.65;
+}
+
+/* Accessible focus outline */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--primary-saffron);
+  outline-offset: 2px;
+}
+
+/* Placeholder badge styling */
+.badge-placeholder {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  letter-spacing: 0.025em;
+}
+
+/* Photo card aspect ratio & image containment to prevent distortion */
+.photo-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background-color: #f1f5f9;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo-frame:hover img {
+  transform: scale(1.03);
+}
+
+/* Gallery Lightbox transitions */
+#lightbox-modal {
+  transition: opacity 0.2s ease-in-out;
+}
+
+#lightbox-modal.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#lightbox-modal:not(.hidden) {
+  opacity: 1;
+  pointer-events: auto;
+}
+
