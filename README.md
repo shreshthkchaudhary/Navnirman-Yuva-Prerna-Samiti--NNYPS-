@@ -56,7 +56,6 @@ All unverified information is marked with `[TO BE CONFIRMED BY NGO]` or `[एन
 | `index.html` (L341) | Monthly Program Card | `[TO BE CONFIRMED BY NGO]` | Specific agenda/details of monthly programs |
 | `index.html` (L407) | Footer Contact | `[TO BE CONFIRMED BY NGO]` | Official phone number |
 | `index.html` (L411) | Footer Contact | `[TO BE CONFIRMED BY NGO]` | Official email address |
-| `index.html` (L468) | Project Attribution | `[कॉलेज छात्र दल]` / `[College Student Team]` | Names of college students in the CS002 team |
 | `about.html` (L164, 185) | Objectives & Mission | `[TO BE CONFIRMED BY NGO]` | Formal NGO registration number, bylaws & aims |
 | `about.html` (L238, 258, 278)| Leadership & Governance | `[TO BE CONFIRMED BY NGO]` | Names of President, Secretary, and Treasurer |
 | `about.html` (Footer) | Footer Contact | `[TO BE CONFIRMED BY NGO]` | Official phone & email |
@@ -163,7 +162,16 @@ All photos reside in `assets/images/`:
 
 ## 8. College Community-Service Project Credit
 
-- **Course:** CS002 (College Community Service Project)
+- **Project Title:** Digital Awareness Platform for Navnirman Yuva Prerna Samiti (NNYPS)
+- **Course:** Community Sdg (CS002) | B.Tech CSE - D (2nd Year, 2026–2027 ODD)
+- **Team ID & Name:** `26O2122` - Tech Seva
+- **Internal Faculty Mentor:** Dr. Naman Gupta
+- **Student Team:**
+  1. **Shreshth Kumar Chaudhary** (Team Leader) – Roll No: `2501010080` (Email: `2501010080@krmu.edu.in`)
+  2. **Nitin** – Roll No: `2501010014` (Email: `2501010014@krmu.edu.in`)
+  3. **Ryan Singh Gosain** – Roll No: `2501010259` (Email: `2501010259@krmu.edu.in`)
+  4. **Shreyansh Kumar** – Roll No: `2501010019` (Email: `2501010019@krmu.edu.in`)
+  5. **Rishabh Kumar Singh** – Roll No: `2501010263` (Email: `2501010263@krmu.edu.in`)
 - **Partner Organisation:** Nav Nirman Yuva Prerna Samiti (NNYPS)
 - **Location:** Village Nagla Bari, Post Manauna, District Mainpuri, Uttar Pradesh
 - **Photo Permissions:** Photos used with explicit permission from the NGO leadership for public educational and community engagement purposes.
