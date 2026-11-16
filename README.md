@@ -55,18 +55,11 @@ All unverified information is marked with `[TO BE CONFIRMED BY NGO]` or `[एन
 
 | Location | Section | Placeholder Text | What to Replace With |
 | :--- | :--- | :--- | :--- |
-| `index.html` (L183) | Hero Mission Line | `[TO BE CONFIRMED BY NGO]` | Official mission statement verified by NGO |
-| `index.html` (L341) | Monthly Program Card | `[TO BE CONFIRMED BY NGO]` | Specific agenda/details of monthly programs |
-| `index.html` (L407) | Footer Contact | `[TO BE CONFIRMED BY NGO]` | Official phone number |
-| `index.html` (L411) | Footer Contact | `[TO BE CONFIRMED BY NGO]` | Official email address |
-| `about.html` (L164, 185) | Objectives & Mission | `[TO BE CONFIRMED BY NGO]` | Formal NGO registration number, bylaws & aims |
-| `about.html` (L238, 258, 278)| Leadership & Governance | `[TO BE CONFIRMED BY NGO]` | Names of President, Secretary, and Treasurer |
-| `about.html` (Footer) | Footer Contact | `[TO BE CONFIRMED BY NGO]` | Official phone & email |
-| `programs.html` (L237)| Monthly Community Program | `[TO BE CONFIRMED BY NGO]` | Description of monthly program topics |
-| `programs.html` (Footer)| Footer Contact | `[TO BE CONFIRMED BY NGO]` | Official phone & email |
-| `gallery.html` (Footer) | Footer Contact | `[TO BE CONFIRMED BY NGO]` | Official phone & email |
-| `contact.html` (L158, 171, 184)| Direct Contact Sidebar | `[TO BE CONFIRMED BY NGO]` | Official phone, email, and office hours |
-| `contact.html` (Footer) | Footer Contact | `[TO BE CONFIRMED BY NGO]` | Official phone & email |
+| `index.html` | Monthly Program Card | `[TO BE CONFIRMED BY NGO]` | Specific agenda/details of monthly programs |
+| `about.html` | Objectives & Mission | `[TO BE CONFIRMED BY NGO]` | Formal NGO bylaws, detailed aims & objectives |
+| `about.html` | Leadership & Governance | `[TO BE CONFIRMED BY NGO]` | Names of President, Secretary, and Treasurer |
+| `programs.html` | Monthly Community Program | `[TO BE CONFIRMED BY NGO]` | Description of monthly program topics |
+| `contact.html` | Direct Contact Sidebar | `[TO BE CONFIRMED BY NGO]` | Office / visiting hours |
 
 ---
 
