@@ -55,10 +55,7 @@ All unverified information is marked with `[TO BE CONFIRMED BY NGO]` or `[एन
 
 | Location | Section | Placeholder Text | What to Replace With |
 | :--- | :--- | :--- | :--- |
-| `index.html` | Monthly Program Card | `[TO BE CONFIRMED BY NGO]` | Specific agenda/details of monthly programs |
 | `about.html` | Objectives & Mission | `[TO BE CONFIRMED BY NGO]` | Formal NGO bylaws, detailed aims & objectives |
-| `programs.html` | Monthly Community Program | `[TO BE CONFIRMED BY NGO]` | Description of monthly program topics |
-| `contact.html` | Direct Contact Sidebar | `[TO BE CONFIRMED BY NGO]` | Office / visiting hours |
 
 ---
 
