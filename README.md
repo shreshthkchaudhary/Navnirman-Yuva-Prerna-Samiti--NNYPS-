@@ -47,15 +47,17 @@ Navnirman-Yuva-Prerna-Samiti--NNYPS-/
 
 ---
 
-## 3. How to Replace Placeholder Text
+## 3. Placeholder Status & Adding Future Details
 
-All unverified information is marked with `[TO BE CONFIRMED BY NGO]` or `[एनजीओ द्वारा पुष्टि की जानी है]`. Search your editor for `TO BE CONFIRMED BY NGO` to locate every instance.
+All content on the website has been verified with the NGO or reflects recorded, factual event archives. **No placeholders remain on the site.**
 
-### Master List of Placeholders
+### Adding New or Updated Details Later
 
-| Location | Section | Placeholder Text | What to Replace With |
-| :--- | :--- | :--- | :--- |
-| `about.html` | Objectives & Mission | `[TO BE CONFIRMED BY NGO]` | Formal NGO bylaws, detailed aims & objectives |
+If the NGO provides additional formal bylaws, updated registration documentation, or new event records in the future, follow these conventions:
+1. **Activities & Objectives:** Update the "हमारी गतिविधियाँ / Our Activities" section in `about.html`.
+2. **Programs:** Add new cards in `programs.html` and `index.html` following the existing card pattern.
+3. **Gallery:** Add new photo albums by creating a folder under `assets/images/<folder-name>/` and declaring the event in `assets/js/gallery-data.js`.
+4. **Bilingual Toggle:** Ensure every user-facing text element has both `data-hi` and `data-en` attributes so the bilingual switcher operates seamlessly.
 
 ---
 

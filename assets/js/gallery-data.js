@@ -57,8 +57,8 @@ const NNYPS_GALLERY_CONFIG = {
         en: 'NNYPS Monthly Community Program'
       },
       date: {
-        hi: 'मासिक सामुदायिक आयोजन',
-        en: 'Monthly Community Assembly'
+        hi: 'मासिक कार्यक्रम',
+        en: 'Monthly Program'
       },
       alt: {
         hi: 'मासिक कार्यक्रम - नव निर्माण युवा प्रेरणा समिति (नगला बरी)',
